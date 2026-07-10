@@ -6,9 +6,9 @@ const App = (props) => {
   return (
     <div>
         {/* Do not remove the main div */}
-        <header>{props.header}</header>
-        <main>{props.children}</main>
-        <footer>{props.footer}</footer>
+        <h1>{props.header}</h1>
+        <h1>{props.children}</h1>
+        <h1>{props.footer}</h1>
     </div>
   )
 }
