@@ -2,15 +2,15 @@
 import React from "react";
 import './../styles/App.css';
 
-const App = (props) => {
+const App = ({ header, children, footer }) => {
   return (
     <div>
-        {/* Do not remove the main div */}
-        <h1>{props.header}</h1>
-        <p>{props.children}</p>
-        <p>{props.footer}</p>
+      {/* Do not remove the main div */}
+      {header}
+      {children}
+      {footer}
     </div>
-  )
-}
+  );
+};
 
 export default App
