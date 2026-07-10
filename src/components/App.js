@@ -7,8 +7,8 @@ const App = (props) => {
     <div>
         {/* Do not remove the main div */}
         <h1>{props.header}</h1>
-        <h1>{props.children}</h1>
-        <h1>{props.footer}</h1>
+        <p>{props.children}</p>
+        <p>{props.footer}</p>
     </div>
   )
 }
