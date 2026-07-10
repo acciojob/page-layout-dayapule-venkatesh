@@ -1,14 +1,14 @@
 
 import React from "react";
 import './../styles/App.css';
-import { Layout } from "./Layout";
 
-const App = () => {
+const App = (props) => {
   return (
     <div>
         {/* Do not remove the main div */}
-        <Layout header={"Welcome to my website"} children={"This is the content of my website"} footer={"© 2023 My Website. All rights reserved"} />
-
+        <header>{props.header}</header>
+        <main>{props.children}</main>
+        <footer>{props.footer}</footer>
     </div>
   )
 }
